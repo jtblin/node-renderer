@@ -1,0 +1,10 @@
+<h1 id="users">users</h1>
+<% _.each(data, function(user) { %>
+	<p>
+    <h1><%= user.name %></h1>
+		<% if (user.status !== null) { %>
+		  <b><%= user.status %></b>
+		<% } %>
+		<a href="/users/index">home</a>
+  </p>
+<% }); %>
